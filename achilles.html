@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achilles: The Hero</title>
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Navbar Styles */
+    nav {
+      background-color: #2c3e50;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 15px 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: #ecf0f1;
+      text-decoration: none;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #e74c3c;
+    }
+
+    /* Main Header */
+    header {
+      background: linear-gradient(to bottom right, #2980b9, #8e44ad);
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+      margin-top: 60px;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      font-style: italic;
+    }
+
+    /* Typewriter Text */
+    .typewriter {
+      font-family: 'Courier New', Courier, monospace;
+      overflow: hidden;
+      border-right: .15em solid orange;
+      white-space: nowrap;
+      margin: 40px auto;
+      letter-spacing: .1em;
+      animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+      max-width: 100%;
+      font-size: 1.5rem;
+      color: #8e44ad;
+      text-align: center;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: orange; }
+    }
+
+    /* Section Styling */
+    section {
+      padding: 80px 20px;
+      margin: 40px 0;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    section p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: justify;
+    }
+
+    /* Slideshow Styles */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: 60px auto;
+      text-align: center;
+    }
+
+    .slides {
+      display: none;
+      width: 100%;
+      max-height: 600px;
+      border-radius: 10px;
+    }
+
+    .active {
+      display: block;
+    }
+
+    /* Button Styling */
+    .cta-button {
+      display: inline-block;
+      background-color: #e74c3c;
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+      text-align: center;
+    }
+
+    .cta-button:hover {
+      background-color: #c0392b;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      text-align: center;
+      padding: 30px 0;
+    }
+
+    footer p {
+      font-size: 1rem;
+    }
+
+    /* Scroll Animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease-in-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 3rem;
+      }
+
+      header p {
+        font-size: 1.2rem;
+      }
+
+      section h2 {
+        font-size: 2rem;
+      }
+
+      section p {
+        font-size: 1rem;
+      }
+
+      .typewriter {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#intro">Intro</a></li>
+      <li><a href="#achilles">Achilles</a></li>
+      <li><a href="#legacy">Legacy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Achilles: The Eternal Hero</h1>
+    <p>The legend that changed the course of history</p>
+  </header>
+
+  <!-- Poetic Typewriter Line -->
+  <div class="typewriter poetic-line">He is half of my soul, as the poets say.</div>
+
+  <!-- Slideshow Section -->
+  <div class="slideshow-container">
+    <img src="https://i.pinimg.com/736x/39/89/2b/39892b26cd24bee8a50bd888eb39f564.jpg" class="slides active" alt="Troy Battle">
+    <img src="https://i.pinimg.com/736x/59/23/d4/5923d4e309364e877731c6b0cb1f9c5b.jpg" class="slides" alt="Troy Battle">
+    <img src="https://i.pinimg.com/736x/82/2e/f4/822ef4e87b227baa09e96e5441180a26.jpg" class="slides" alt="Troy Battle">
+    <img src="https://i.pinimg.com/736x/20/cd/5f/20cd5ffea70b54f3fa04407d23e547cf.jpg" class="slides" alt="Troy Battle">
+    <img src="https://i.pinimg.com/736x/d2/ab/25/d2ab254386d7e8dea286ab1290ed35f6.jpg" class="slides" alt="Troy Battle">
+    <img src="https://i.pinimg.com/736x/33/83/e7/3383e7b73e402dc67b982832f148cc84.jpg" class="slides" alt="Troy Battle">
+    <img src="https://i.pinimg.com/736x/12/a5/c2/12a5c248a36dea5badf528844414c3c5.jpg" class="slides" alt="Troy Battle">
+  </div>
+
+  <!-- Introduction Section -->
+  <section id="intro" class="fade-in">
+    <h2>Introduction</h2>
+    <p>Achilles, son of the mortal Peleus and the goddess Thetis, was a Greek hero of the Trojan War. His tale is one of bravery, rage, and the pursuit of immortality through glory. Famous for his strength and near invincibility, Achilles became a symbol of heroic ideals.</p>
+  </section>
+
+  <!-- Achilles' Story Section -->
+  <section id="achilles" class="fade-in">
+    <h2>Achilles' Journey</h2>
+    <p>From his childhood in Phthia to his fateful participation in the Trojan War, Achilles' story is filled with love, friendship, and tragic loss. His wrath, after the death of his friend Patroclus, led to his iconic clash with Hector, where Achilles avenged his comrade and secured his place in legend.</p>
+  </section>
+
+  <!-- Legacy Section -->
+  <section id="legacy" class="fade-in">
+    <h2>Achilles' Legacy</h2>
+    <p>Achilles' legacy has transcended time. His myth has inspired countless works of literature, art, and culture. His name is synonymous with strength, but also with the understanding that even the greatest heroes have their vulnerabilities. His legacy lives on, immortalized through the ages.</p>
+  </section>
+
+  <!-- Call to Action Button -->
+  <div style="text-align: center;">
+    <a href="#contact" class="cta-button">Get In Touch</a>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="fade-in">
+    <h2>Contact</h2>
+    <p>If you are a scholar, artist, or enthusiast who wishes to explore more about Achilles and his legacy, feel free to reach out. We welcome collaboration, research inquiries, and artistic contributions.</p>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Achilles Foundation. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    window.addEventListener('scroll', function () {
+      let fadeInElements = document.querySelectorAll('.fade-in');
+      fadeInElements.forEach((el) => {
+        if (el.getBoundingClientRect().top <= window.innerHeight) {
+          el.classList.add('visible');
+        }
+      });
+    });
+
+    // Slideshow Script
+    let slideIndex = 0;
+    const slides = document.querySelectorAll(".slides");
+    setInterval(() => {
+      slides[slideIndex].classList.remove("active");
+      slideIndex = (slideIndex + 1) % slides.length;
+      slides[slideIndex].classList.add("active");
+    }, 3000);
+  </script>
+
+</body>
+</html>
